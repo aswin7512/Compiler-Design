@@ -4,5 +4,3 @@ int main() {
     if (a < b)/*compare*/
         return a;
 }
-
-

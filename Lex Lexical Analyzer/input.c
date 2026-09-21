@@ -1,4 +1,3 @@
-// Compute area
 int main() {
     float radius = 5.5;
     float area;
