@@ -5,3 +5,4 @@
 *.txt
 *.yy.c
 y.tab.c
+test*.c

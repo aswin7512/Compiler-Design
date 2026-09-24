@@ -76,29 +76,29 @@ int main() {
             if (ch != EOF)
                 ungetc(ch, fp);
         }
-	// Comments
-	else if (ch == '/') {
-	    char next = fgetc(fp);
+        // Comments
+        else if (ch == '/') {
+            char next = fgetc(fp);
 
-	    // Multi-line comment /* */
-	    if (next == '*') {
-		while ((ch = fgetc(fp)) != EOF) {
-		    if (ch == '*') {
-		        ch = fgetc(fp);
-		        if (ch == '/')
-		            break;
-		    }
-		}
+            // Multi-line comment /* */
+            if (next == '*') {
+            while ((ch = fgetc(fp)) != EOF) {
+                if (ch == '*') {
+                    ch = fgetc(fp);
+                    if (ch == '/')
+                        break;
+                }
+            }
 	    }
 
 	    // Single-line comment //
 	    else if (next == '/') {
-		while ((ch = fgetc(fp)) != '\n' && ch != EOF);
+		    while ((ch = fgetc(fp)) != '\n' && ch != EOF);
 	    }
 
 	    else {
-		printf("/ : Operator\n");
-		ungetc(next, fp);
+            printf("/ : Operator\n");
+            ungetc(next, fp);
 	    }
 	}
 
