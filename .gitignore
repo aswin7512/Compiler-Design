@@ -3,3 +3,5 @@
 *.OBJ
 *.COM
 *.txt
+*.yy.c
+y.tab.c
