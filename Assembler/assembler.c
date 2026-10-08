@@ -5,7 +5,7 @@ int main() {
     char str[50];
     char res, arg1, op, arg2;
 
-    printf("Enter the three address code:\n");
+    printf("Enter the three address code: ");
     if (scanf("%s", str) != 1) {
         return 1;
     }
