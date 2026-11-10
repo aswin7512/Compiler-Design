@@ -3,10 +3,16 @@
 ```
 Compiler-Design
 ├── Exam
-│   └── lex_c
+│   ├── lex_c
+│   │   ├── input.c
+│   │   ├── main.c
+│   │   └── main.out
+│   └── lex_l
 │       ├── input.c
-│       ├── main.c
+│       ├── lex.yy.c
+│       ├── main.l
 │       └── main.out
+├── imp.md
 ├── README.md
 └── Regular
     ├── 654 LEARNING MATERIAL LAB MANUAL.pdf
@@ -24,7 +30,6 @@ Compiler-Design
     ├── E-Closure
     │   ├── eclosure_algo.md
     │   └── eclosure.c
-    ├── imp.md
     ├── Intermediate Code Generation
     │   ├── inter_code_algo.md
     │   └── inter_code.c
@@ -35,7 +40,9 @@ Compiler-Design
     ├── Lex Lexical Analyzer
     │   ├── input.c
     │   ├── lexer.l
-    │   └── lexical_analyzer_algo.md
+    │   ├── lexer.out
+    │   ├── lexical_analyzer_algo.md
+    │   └── lex.yy.c
     ├── Operator Precedence Parser
     │   ├── op-precedence-parser_algo.md
     │   └── op-precedence-parser.c
