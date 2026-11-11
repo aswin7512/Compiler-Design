@@ -19,6 +19,9 @@ Compiler-Design
 │   │   ├── lex.yy.c
 │   │   ├── main.l
 │   │   └── main.out
+│   ├── rd_parser
+│   │   ├── main.c
+│   │   └── main.out
 │   ├── target_code
 │   │   ├── main.c
 │   │   └── main.out
@@ -73,7 +76,8 @@ Compiler-Design
     ├── Printout.pdf
     ├── Recursive Descent Parser
     │   ├── recursive_descent_parser_algo.md
-    │   └── recursive_descent_parser.c
+    │   ├── recursive_descent_parser.c
+    │   └── recursive_descent_parser.out
     ├── Shift Reduce Parser
     │   ├── sr_parser_algo.md
     │   └── sr_parser.c
