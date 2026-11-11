@@ -4,99 +4,77 @@
 
 char input[100];
 int pos = 0;
-
-void expression();
-void term();
 void factor();
+void term();
 
-/* Skip spaces */
-void skipSpaces()
-{
+void skipSpaces() {
     while (isspace(input[pos]))
         pos++;
 }
 
-void factor()
-{
-    skipSpaces();
-
-    if (isalpha(input[pos]))
-    {
-        pos++;
-
-        while (isalnum(input[pos]))
-            pos++;
-    }
-
-    else if (isdigit(input[pos]))
-    {
-        while (isdigit(input[pos]))
-            pos++;
-    }
-
-    else if (input[pos] == '(')
-    {
-        pos++;
-
-        expression();
-
-        skipSpaces();
-
-        if (input[pos] == ')')
-        {
-            pos++;
-        }
-        else
-        {
-            printf("Invalid expression: missing ')'\n");
-            exit(1);
-        }
-    }
-
-    else
-    {
-        printf("Invalid expression\n");
-        exit(1);
-    }
-
-    skipSpaces();
-}
-
-void term()
-{
-    factor();
-
-    skipSpaces();
-
-    while (input[pos] == '*')
-    {
-        pos++;
-        factor();
-        skipSpaces();
-    }
-}
-
-void expression()
-{
+void expression() {
     term();
-
     skipSpaces();
 
-    while (input[pos] == '+')
-    {
+    while (input[pos] == '+') {
         pos++;
         term();
         skipSpaces();
     }
 }
 
-int main()
-{
+void term() {
+    factor();
+    skipSpaces();
+
+    while (input[pos] == '*'){
+        pos++;
+        factor();
+        skipSpaces();
+    }
+}
+
+
+void factor() {
+    skipSpaces();
+
+    if (isalpha(input[pos])) {
+        pos++;
+        while (isalnum(input[pos]))
+            pos++;
+    }
+
+    else if (isdigit(input[pos])) {
+        while (isdigit(input[pos]))
+            pos++;
+    }
+
+    else if (input[pos] == '(') {
+        pos++;
+        expression();
+        skipSpaces();
+
+        if (input[pos] == ')') {
+            pos++;
+        }
+        else {
+            printf("Invalid expression: missing ')'\n");
+            exit(1);
+        }
+    }
+
+    else{
+        printf("Invalid expression\n");
+        exit(1);
+    }
+
+    skipSpaces();
+}
+int main() {
     printf("Enter an expression: ");
     fgets(input, sizeof(input), stdin);
 
     expression();
-
     skipSpaces();
 
     if (input[pos] == '\0')
