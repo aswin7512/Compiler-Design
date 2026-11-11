@@ -12,6 +12,9 @@ Exam
 ├── const_prop
 │   ├── main.c
 │   └── main.out
+├── intermediate
+│   ├── main.c
+│   └── main.out
 ├── lex_c
 │   ├── input.c
 │   ├── main.c
