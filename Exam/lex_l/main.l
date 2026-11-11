@@ -11,7 +11,7 @@ number      {digit}+
 [+\-*/%<>=] { printf("%s: Operator\n", yytext); }
 [()\[\]{};] { printf("%s: Special Symbol\n", yytext); }
 [ \n\t\r]   {}
-.           {printf("%s: Unknown...\n", yytext);}
+.           { printf("%s: Unknown...\n", yytext); }
 %%
 
 int yywrap() {return 1;}
