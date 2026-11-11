@@ -3,6 +3,13 @@
 ```
 Compiler-Design
 ├── Exam
+│   ├── calculator_lex
+│   │   ├── lex.yy.c
+│   │   ├── main.l
+│   │   ├── main.out
+│   │   ├── main.y
+│   │   ├── y.tab.c
+│   │   └── y.tab.h
 │   ├── lex_c
 │   │   ├── input.c
 │   │   ├── main.c
@@ -21,9 +28,11 @@ Compiler-Design
     │   └── assembler.c
     ├── Calculator
     │   ├── calc.l
+    │   ├── calc.out
     │   ├── calculator_algo.md
     │   ├── calc.y
-    │   └── y.tab.h
+    │   ├── lex.yy.c
+    │   └── y.tab.c
     ├── Constant Propogation
     │   ├── constant_propogation_algo.md
     │   └── constant_propogation.c
