@@ -4,6 +4,8 @@
     void yyerror(const char* s);
 %}
 %token NUMBER NL
+%left '+' '-'
+%left '*' '/'
 
 %%
 
