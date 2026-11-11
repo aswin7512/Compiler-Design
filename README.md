@@ -2,9 +2,14 @@
 
 ```
 Compiler-Design
+├── Exam
 │   ├── calculator_lex
+│   │   ├── lex.yy.c
 │   │   ├── main.l
-│   │   └── main.y
+│   │   ├── main.out
+│   │   ├── main.y
+│   │   ├── y.tab.c
+│   │   └── y.tab.h
 │   ├── lex_c
 │   │   ├── input.c
 │   │   ├── main.c
@@ -13,6 +18,9 @@ Compiler-Design
 │   │   ├── input.c
 │   │   ├── lex.yy.c
 │   │   ├── main.l
+│   │   └── main.out
+│   ├── target_code
+│   │   ├── main.c
 │   │   └── main.out
 │   └── validate_var_yacc
 │       ├── lex.yy.c
