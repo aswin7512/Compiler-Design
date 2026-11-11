@@ -4,21 +4,14 @@
 Compiler-Design
 ├── Exam
 │   ├── calculator_lex
-│   │   ├── lex.yy.c
 │   │   ├── main.l
-│   │   ├── main.out
 │   │   ├── main.y
-│   │   ├── y.tab.c
-│   │   └── y.tab.h
 │   ├── lex_c
 │   │   ├── input.c
 │   │   ├── main.c
-│   │   └── main.out
 │   └── lex_l
 │       ├── input.c
-│       ├── lex.yy.c
-│       ├── main.l
-│       └── main.out
+│       └── main.l
 ├── imp.md
 ├── README.md
 └── Regular
@@ -28,11 +21,8 @@ Compiler-Design
     │   └── assembler.c
     ├── Calculator
     │   ├── calc.l
-    │   ├── calc.out
     │   ├── calculator_algo.md
-    │   ├── calc.y
-    │   ├── lex.yy.c
-    │   └── y.tab.c
+    │   └── calc.y
     ├── Constant Propogation
     │   ├── constant_propogation_algo.md
     │   └── constant_propogation.c
@@ -49,9 +39,7 @@ Compiler-Design
     ├── Lex Lexical Analyzer
     │   ├── input.c
     │   ├── lexer.l
-    │   ├── lexer.out
     │   ├── lexical_analyzer_algo.md
-    │   └── lex.yy.c
     ├── Operator Precedence Parser
     │   ├── op-precedence-parser_algo.md
     │   └── op-precedence-parser.c
@@ -70,8 +58,7 @@ Compiler-Design
     ├── validate variable
     │   ├── variable_algo.md
     │   ├── variable.l
-    │   ├── variable.y
-    │   └── y.tab.h
+    │   └── variable.y
     └── yacc parser
         ├── lexer.l
         ├── parser.y
